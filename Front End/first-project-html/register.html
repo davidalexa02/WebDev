@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page</title>
+</head>
+
+<body>
+
+
+    <!-- Use GET, not POST -->
+    <h3>Register form:</h3>
+    <form method="GET" action="action.php">
+        First name:<input type="text" name="fn"><br>
+        Last name: <input type="text" name="ln"><br>
+        Email: <input type="email" name="email" required><br>
+        Password: <input type="password" name="password" min="5">
+        BOD: <input type="date" name="dob"><br>
+        Gender: <br> <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+        <input type="radio" name="gender" value="other">Other<br>
+        Pets: <br>
+        <input type="checkbox" name="cats">Cats <br>
+        <input type="checkbox" name="dogs">Dogs <br>
+        <input type="checkbox" name="other">Other <br>
+        Cars: <br>
+        <select name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="audi">Audi</option>
+            <option value="benz">Mercedes-Benz</option>
+        </select>
+        <br>
+        <input type="submit" value="Register">
+        <input type="reset">
+    </form> 
+</body>
+
+</html>

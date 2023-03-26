@@ -1,0 +1,88 @@
+/* selector {
+ property:value;
+} */
+
+* {
+    text-align: right;
+}
+
+
+body {
+    background-image: url(images/motos.avif);
+    background-size: cover;
+}
+
+h2, p {
+    /* this selector will apply these changes to all tags that are inside the parent tag */
+    color: #b88fa5;
+    text-align: center;
+    border: 5px dashed rgba(200, 25, 25, 0.5);
+    /* rgba also modifies the opacity */
+    cursor: pointer;
+    /* cursor property changes how the mouse 
+    looks like when the cursor itself is on the html tag */
+}
+
+h2 span{
+    color: gold
+}
+
+h2 > span{
+    /* this selector will apply this change only to those tags that are specifically into the parent tag */
+    color: aqua;
+}
+
+p {
+    color: pink;
+}
+
+p {
+    line-height: 5px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 100%;
+    /* more fonts in case the other fails */
+    font-family: 'Poiret One', cursive;
+}
+
+p{
+    /* this selector will apply to the tags next to the first indicated */
+    color: brown;
+}
+
+img{
+    /* not the best property */
+    float: right;
+}
+
+footer{
+    clear: both;
+    text-align: center;
+}
+
+/* h2 + p:hover{
+    color: orange;
+} */
+
+/* it will turn green because it processes the selectors from top to bottom */
+
+ul{
+    background-color: #b88fa5;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.webtext{
+    border: 5px dashed green;
+}
+
+.webtext:last-child, .webtext:first-child{
+    color: #b88fa5;
+}
+
+#div1{
+    background: rgba(0, 0, 255, 0.2);
+}

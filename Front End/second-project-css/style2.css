@@ -1,0 +1,18 @@
+h2{
+    color: blue;
+}
+
+p{
+    font-size: 20px;
+    padding: 0px 1px 1px 0px;
+}
+
+/* span{
+    5em = 5 times the containing element, which is the p in this case
+    font-size: 5em;
+} */
+
+span{
+    /* 5 rem = 5 times the root element size. That means, whatever the document is, it is always going to be twice as big */
+    font-size: 5rem;
+}
